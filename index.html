@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - ajax hospital info</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h2 class="title">高雄市醫療機構聯絡清單</h2>
+<div class="top">
+  <div class="clinicYouPick">
+    <div class="clinicName">蔡政道</div>
+    <div class="clinicTel">076108421</div>
+  </div>
+  <div class="panel">
+    <button class="btn btn-primary" onclick="downloadList()">載入</button>
+    <button class="btn btn-warning" onclick="showloadList()">展開</button>
+    <button class="btn btn-warning" onclick="hideloadList()">收合</button>
+    <input type="text" name="district" placeholder="請輸入行政區"/>
+    <button class="district btn btn-info">篩選</button>
+    <input type="text" name="subject" placeholder="請輸入科別"/>
+    <button class="subject btn btn-info">篩選</button>
+  </div>
+</div>
+<div class="clinicINFO">
+  <iframe class="clinicMap"></iframe>
+  <ul class="clinicList"></ul>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

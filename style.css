@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap");
+* {
+  font-family: Noto Sans SC;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.top {
+  display: flex;
+}
+.top .clinicYouPick {
+  width: 300px;
+  height: 20px;
+}
+.top .panel {
+  position: absolute;
+  left: 450px;
+}
+.top .panel input {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.clinicINFO {
+  display: flex;
+  margin-top: 50px;
+}
+.clinicINFO .clinicMap {
+  margin: 10px;
+  width: 600px;
+  height: 450px;
+  border: 0px;
+}
+.clinicINFO .clinicList li {
+  cursor: pointer;
+  list-style: none;
+  width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.clinicINFO .clinicList li:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
